@@ -20,6 +20,9 @@ module.exports = async (client, message) => {
         (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
       );
 
+    if (!command) return
+    
+    
   
   
   } catch (err) {
