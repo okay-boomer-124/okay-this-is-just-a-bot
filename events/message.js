@@ -22,7 +22,7 @@ module.exports = async (client, message) => {
 
     if (!command) return
     
-    
+    command.execute(client, message, args, prefix)
   
   
   } catch (err) {
