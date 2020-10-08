@@ -1,8 +1,6 @@
 const Discord = require("discord.js");
 const config = require("../util/config.json");
-const rank_in = require(`../info/rank_info.json`);
-const PrefixSchema = require("../schemas/prefix");
-const cross = config.emoji.cross;
+const prefix = config.prefix
 
 module.exports = async (client, message) => {
   if (message.author.bot) return;
